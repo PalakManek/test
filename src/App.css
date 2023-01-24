@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 20px;
+  background-color: rgb(224, 219, 219);
+  margin: 20px;
+}
+
+.heading {
+  color: rgb(228, 94, 94);
+  margin-bottom: 10px;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 10px 0;
+  color: white;
+}
+
+.article-card{
+  flex: 0 0 calc(33.33% - 10px);
+  width: calc(33.33% - 10px);
+  background-color: rgb(228, 94, 94);
+  
+}
+.article-card-content{
+  padding: 10px 10px 20px;
+}
+.article-details {
+  height: 155px;
+  overflow-y: scroll;
+}
+
+.read-more-div{
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-link {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid white;
+  padding: 5px;
+  text-decoration: none;
+  color: white !important;
+}
+
+
+.secondary{
+  color:rgb(228, 94, 94);
+  border: 1px solid rgb(228, 94, 94);
+  background-color: white;
+  margin-right: 5px;
+}
+
+.input-field{
+  width: 500px;
+}
+
+.no-article-text {
+  margin: auto;
+  color: #000;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .article-card {
+    flex: 0 0 calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .article-card {
+    flex: 0 0 calc(100% - 10px);
+    width: calc(100% - 10px);
+  }
+  .input-field {
+    width: 300px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.article-card:nth-child(1){
+  background-color: red;
+}
+.article-card:nth-child(2){
+  background-color: blue;
+}
+.article-card:nth-child(3){
+  background-color: green;
+}
+
+.article-card:nth-child(4){
+  background-color: black;
+}
+.article-card:nth-child(5){
+  background-color: orange;
+}
+.article-card:nth-child(6){
+  background-color: purple;
+}
